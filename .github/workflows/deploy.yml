@@ -9,7 +9,7 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # Diperlukan untuk push ke branch gh-pages
+      contents: write
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
@@ -17,10 +17,11 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "18" # Ganti sesuai versi Node.js Anda jika perlu
+          node-version: "18"
 
       - name: Install Dependencies 📦
-        run: npm ci
+        # --- PERUBAHAN DI BARIS INI ---
+        run: npm install --legacy-peer-deps
 
       - name: Build Project 🏗️
         run: npm run build
