@@ -15,7 +15,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 
 function App() {
   const backgroundImageUrl =
-    "https://images.unsplash.com/photo-1554460586-1ee11b0e00be?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+    "https://sm.pcmag.com/t/pcmag_au/how-to/d/dont-recyc/dont-recycle-it-reuse-it-10-clever-uses-for-your-old-smartph_h7sd.1920.jpg";
 
   return (
     <Router basename="/kuesioner">
